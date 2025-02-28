@@ -7,7 +7,7 @@
 
 Далее переходим по предоставленной в терминале ссылке.  
 ## Краткая документация к проекту
-
+  */src/App.scss* -папка в которой хранятся все стили в формате scss 
   */src/components* -папка в которой созданы компоненты  
   */src/components/Article* - пост  
   */src/components/ArticleList* - компонент, возвращающий список постов  
@@ -17,5 +17,6 @@
 
   Скриншот запущенного проекта 
 
-  ![image](https://github.com/user-attachments/assets/016d4b3f-c79c-428b-a1a6-bf142e5b6b53)
+  ![image](https://github.com/user-attachments/assets/8ad98f57-18a3-4e02-9810-4bd9f42408a0)
+
 
