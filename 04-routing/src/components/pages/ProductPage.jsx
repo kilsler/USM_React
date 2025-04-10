@@ -6,17 +6,20 @@ export default function ProductPage() {
     const [pizzaList, setPizzaList] = useState([]);
     const { id } = useParams();
     const navigate = useNavigate();
-    
-    useEffect(()=>{
-        if(id != undefined && isNaN(id)){
-            navigate('/error',{replace : true})
+
+    useEffect(() => {
+        const isInvalidId = (id != undefined && isNaN(id)) || Number(id) < 0 || Number(id) >= pizzaData.length;
+        if (isInvalidId) {
+            navigate('/error', { replace: true })
+            return;
         }
-        setPizzaList(pizzaData);
-    },[])
+
+        setPizzaList(id === undefined ? pizzaData : pizzaData.filter((pizza) => pizza.id === Number(id)));
+    }, [id, navigate])
     return (
         <div className="text-white flex flex-wrap justify-center items-center gap-4 w-7/12">
-            {pizzaList.map((pizza)=>(
-                <PizzaCard key ={pizza.id} pizza={pizza}/>
+            {pizzaList.map((pizza) => (
+                <PizzaCard key={pizza.id} pizza={pizza} />
             ))}
         </div>
     )
