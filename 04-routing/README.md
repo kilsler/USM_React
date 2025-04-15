@@ -16,9 +16,11 @@
 ## Краткая документация к проекту
 - `src/App.jsx` -  главный компонент приложения.
 - `src/сomponents/Header.jsx` -  Хэдер компонент приложения. Содержит логотип, строку поиска(не рабочую).  
-- `src/сomponents/Footer.jsx` -  Футер компонент приложения. Содержит дату и ссылку на репозиторий.  
+- `src/сomponents/Footer.jsx` -  Футер компонент приложения. Содержит дату и ссылку на репозиторий.
+- `src/сomponents/Search.jsx` -  Компонент поиска.
 - `src/сomponents/PizzaCard.jsx` - Карта-пиццы компонент приложения. Выводит информацию о пицце и её карточку.  
 - `src/сomponents/MainLayout.jsx` -  layout-компонент для всех страниц.  
+- `src/сomponents/pages/ProductPage.jsx` - Выбранная пицца.
 - `src/сomponents/pages/ProductPage.jsx` - Список-пицц компонент приложения.  
 - `src/сomponents/pages/AboutUsPage.jsx` - Компонент выводящй информацию о компании-пиццерии.  
 - `src/сomponents/pages/CartPage.jsx` - Компонент с текущей корзиной покупок.   
